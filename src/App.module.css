@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.app {
+  /* background-color: grey; */
+  background-image: url("./pexels-scottwebb-305821.jpg");
+  background-size:cover;
+  /* aspect-ratio: 1/1; */
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* overflow: hidden; */
+
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}

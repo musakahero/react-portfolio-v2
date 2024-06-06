@@ -1,0 +1,28 @@
+.nav-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem 2rem 1rem 2rem;
+}
+.nav-container .logo-container {
+    margin-top: 1rem;
+}
+.nav-container .logo-container a{
+    font-size: 3rem;
+    border: 3px solid var(--accent-green);
+    padding: 0.5rem 1.5rem 1rem 1.5rem;
+    border-radius: 8px;
+}
+.nav-container .logo-container a:hover {
+    border-color: black;
+}
+
+.nav-container .nav-ul {
+    font-size:2rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 0.6rem;
+}
+
