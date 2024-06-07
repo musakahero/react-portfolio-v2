@@ -1,4 +1,5 @@
 import styles from './App.module.css';
+import { Blog } from './components/Blog/Blog';
 import { Footer } from './components/Footer/Footer';
 import { Home } from './components/Home/Home';
 import { Navigation } from './components/Navigation/Navigation';
@@ -13,7 +14,7 @@ function App() {
       <main className={styles["app-main"]}>
         <Routes>
           <Route path='/' element={<Home />}></Route>
-          <Route path='/blog' element={<Home />}></Route>
+          <Route path='/blog' element={<Blog />}></Route>
           <Route path='/projects' element={<Home />}></Route>
           <Route path='/contact' element={<Home />}></Route>
         </Routes>

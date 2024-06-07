@@ -25,3 +25,12 @@
     text-wrap: wrap;
     max-width: 45vw;
 }
+
+.hero-container .image-container {
+    max-width: 13vw;
+}
+
+.hero-container .image-container img{
+    border-radius: 30%;
+    /* border: 1px solid red; */
+}

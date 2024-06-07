@@ -9,7 +9,7 @@ export const Navigation = () => {
                 <Link className={"logo-url"} to={"/"}>ruschev.dev_</Link>
             </div>
             <ul className={styles["nav-ul"]}>
-                <li className={styles["nav-item"]}><Link>Blog</Link></li>
+                <li className={styles["nav-item"]}><Link to={'/blog'}>Blog</Link></li>
                 <li className={styles["nav-item"]}><Link>Projects</Link></li>
                 <li className={styles["nav-item"]}><Link>Contact me</Link></li>
             </ul>
