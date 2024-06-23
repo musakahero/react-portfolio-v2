@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import styles from './Navigation.module.css';
+import { NavItem } from './NavItem';
 
-export const Navigation = () => {
+export const Navigation = (props) => {
 
     return (
         <div className={styles["nav-container"]}>
@@ -9,9 +10,9 @@ export const Navigation = () => {
                 <Link className={"logo-url"} to={"/"}>ruschev.dev_</Link>
             </div>
             <ul className={styles["nav-ul"]}>
-                <li className={styles["nav-item"]}><Link to={'/blog'}>Blog</Link></li>
-                <li className={styles["nav-item"]}><Link>Projects</Link></li>
-                <li className={styles["nav-item"]}><Link>Contact me</Link></li>
+               <li><NavItem to={'/blog'} textContent={'Blog'}/></li>
+               <li><NavItem to={'/projects'} textContent={'Projects'}/></li>
+               <li><NavItem to={'/contacts'} textContent={'Contact me'}/></li>                  
             </ul>
         </div>
     );

@@ -1,13 +1,10 @@
 .footer-container {
-    padding: 2rem 2rem 2rem 2rem;
     font-size: 1.1rem;
     display: flex;
     justify-content: space-between;
     margin-top: auto;
     width: 100%;
     font-size: 2rem;
-
-    /* border: 1px solid red; */
 }
 
 .footer-container .socials-container {
@@ -19,7 +16,7 @@
 .darkmode-btn {
     cursor: pointer;
     position: relative;
-    display: inline-block;
+    display: inline-block;  
 }
 
 .darkmode-btn .tooltiptext {

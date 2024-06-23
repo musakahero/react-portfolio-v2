@@ -2,7 +2,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 1rem 2rem 1rem 2rem;
+    /* padding: 1rem 2rem 1rem 2rem; */
 }
 .nav-container .logo-container {
     margin-top: 1rem;
@@ -26,3 +26,6 @@
     gap: 0.6rem;
 }
 
+a.active {
+    color: var(--accent-green);
+}

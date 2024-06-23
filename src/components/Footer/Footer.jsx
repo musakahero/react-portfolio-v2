@@ -1,8 +1,8 @@
 import styles from './Footer.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn, faGithub, faGoogle } from '@fortawesome/free-brands-svg-icons';
-import { faMoon, faSun } from '@fortawesome/free-regular-svg-icons';
-import { faMoon as faMoonSolid, faSun as faSunSolid } from '@fortawesome/free-solid-svg-icons';
+import { faSun } from '@fortawesome/free-regular-svg-icons';
+import { faMoon as faMoonSolid } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
