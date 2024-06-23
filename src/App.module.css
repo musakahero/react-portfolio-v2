@@ -8,7 +8,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /* overflow: hidden; */
+  overflow: hidden;
 
   font-family: "Encode Sans Expanded", sans-serif;
   font-weight: 400;

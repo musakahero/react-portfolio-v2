@@ -1,5 +1,6 @@
 import styles from './App.module.css';
 import { Blog } from './components/Blog/Blog';
+import { BlogPost } from './components/Blog/BlogPost/BlogPost';
 import { Footer } from './components/Footer/Footer';
 import { Home } from './components/Home/Home';
 import { Navigation } from './components/Navigation/Navigation';
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />}></Route>
           <Route path='/blog' element={<Blog />}></Route>
+          <Route path='/blog/:postId' element={<BlogPost />}></Route>
           <Route path='/projects' element={<Projects />}></Route>
           <Route path='/contacts' element={<Contacts />}></Route>
         </Routes>

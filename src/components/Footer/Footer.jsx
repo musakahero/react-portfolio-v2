@@ -5,13 +5,24 @@ import { faSun } from '@fortawesome/free-regular-svg-icons';
 import { faMoon as faMoonSolid } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { appearUp } from '../../utils/animations';
 
 export const Footer = () => {
     // Darkmode state
     const [darkmode, setDarkmode] = useState(false);
+    // const [showFooter, setShowFooter] = useState(false);
+    // useEffect(() => {
+    //     setShowFooter(true);
+    // },[])
 
+    
     return (
-        <div className={styles["footer-container"]}>
+        <motion.div className={styles["footer-container"]}
+        variants={appearUp}
+        initial="hidden"
+        animate="visible"
+        >
             <ul className={styles["socials-container"]}>
                 <li className={styles["linkedin"]}>
                     <Link to={"https://linkedin.com/in/teoruschev"} target='_blank'>
@@ -38,6 +49,6 @@ export const Footer = () => {
                     {!darkmode ? "Go dark" : "Go light"}
                 </span>
             </button>
-        </div>
+        </motion.div>
     )
 }
