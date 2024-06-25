@@ -8,15 +8,8 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { appearUp } from '../../utils/animations';
 
-export const Footer = () => {
-    // Darkmode state
-    const [darkmode, setDarkmode] = useState(false);
-    // const [showFooter, setShowFooter] = useState(false);
-    // useEffect(() => {
-    //     setShowFooter(true);
-    // },[])
+export const Footer = ({darkmode, setDarkmode}) => {
 
-    
     return (
         <motion.div className={styles["footer-container"]}
         variants={appearUp}

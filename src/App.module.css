@@ -9,11 +9,28 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-
+  color: var(--font-dark);
   font-family: "Encode Sans Expanded", sans-serif;
   font-weight: 400;
   font-style: normal;
 
   padding: 1rem 2rem 1rem 2rem;
 
+  /* Colors */
+  --accent-main: #8CAF6F;
+  --font-light: whitesmoke;
+  --font-dark: black;
+  --bg-dark: black;
+  --bg-light: whitesmoke;
+  --bg-dark-transparent: rgba(0, 0, 0, 0.708);
+}
+
+.darkmode {
+  --accent-main: #8CAF6F;
+  --font-light: black;
+  --font-dark: whitesmoke;
+  --bg-dark: whitesmoke;
+  --bg-light: black;
+  --bg-dark-transparent: rgba(238, 238, 238, 0.708);
+  background-image: url("./cosmos-1853491.jpg");
 }

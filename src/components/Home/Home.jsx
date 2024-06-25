@@ -10,8 +10,7 @@ export const Home = () => {
             <motion.div className={styles["intro-container"]}
                 variants={appearDelayedChildren}
                 initial="hidden"
-                animate="visible"
-                >
+                animate="visible">
                 <h1>Hi, I'm Teo - a web developer.<br />Welcome to my domain.</h1>
                 <h3>See what I'm up to <strong className={styles["blogLink"]}><Link to={'/blog'}>here</Link></strong>.</h3>
             </motion.div>

@@ -9,12 +9,12 @@
 }
 .nav-container .logo-container a{
     font-size: 3rem;
-    border: 3px solid var(--accent-green);
+    border: 3px solid var(--accent-main);
     padding: 0.5rem 1.5rem 1rem 1.5rem;
     border-radius: 8px;
 }
 .nav-container .logo-container a:hover {
-    border-color: black;
+    border-color: var(--font-dark);
 }
 
 .nav-container .nav-ul {
@@ -27,5 +27,5 @@
 }
 
 a.active {
-    color: var(--accent-green);
+    color: var(--accent-main);
 }

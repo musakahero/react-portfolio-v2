@@ -22,11 +22,11 @@
 .darkmode-btn .tooltiptext {
     visibility: hidden;
     width: 10vw;
-    background-color: rgba(0, 0, 0, 0.708);
-    color: #fff;
+    background-color: var(--bg-dark-transparent);
+    color: var(--font-light);
     text-align: center;
     padding: 0.5rem 1rem;
-    margin-right: 0.5rem;
+    margin-right: 1rem;
     border-radius: 6px;
     position: absolute;
     z-index: 1;
@@ -41,5 +41,5 @@
     font-size: 2.5rem;
   }
 .darkmode-btn a:hover {
-    color: black;
+    color: var(--font-dark);
 }

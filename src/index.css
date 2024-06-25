@@ -3,8 +3,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  /* Colors */
-  --accent-green: #8CAF6F;
+  
 }
 
 /* remove default spacing */
@@ -17,7 +16,7 @@
 
 /* dark mode user-agent-styles */
 html {
-  /* color-scheme: dark light; */
+  color-scheme: dark light;
 }
 
 /* min body height */
@@ -51,8 +50,8 @@ button {
 
 /* Highlight links when hovered */
 a:hover {
-  color: var(--accent-green);
-  border-bottom: 2px solid black;
+  color: var(--accent-main);
+  border-bottom: 2px solid var(--font-dark);
 }
 
 /* Bold text */

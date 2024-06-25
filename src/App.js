@@ -7,10 +7,20 @@ import { Navigation } from './components/Navigation/Navigation';
 import { Route, Routes } from 'react-router-dom';
 import { Projects } from './components/Projects/Projects';
 import { Contacts } from './components/Contacts/Contacts';
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { appearInstant } from './utils/animations';
 
 function App() {
+  const [darkmode, setDarkmode] = useState(false);
+
   return (
-    <div className={styles["app"]}>
+    <div
+    className={`${styles["app"]} ${darkmode && styles["darkmode"]}`}
+    // variants={appearInstant}
+    // initial={'hidden'}
+    // animate={'visible'}
+    >
       <header className={styles["app-header"]}>
         <Navigation />
       </header>
@@ -23,7 +33,7 @@ function App() {
           <Route path='/contacts' element={<Contacts />}></Route>
         </Routes>
       </main>
-      <Footer />
+      <Footer darkmode={darkmode} setDarkmode={setDarkmode}/>
     </div>
   );
 }

@@ -3,6 +3,7 @@ import styles from './Blog.module.css';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { testCollection } from '../../utils/testPosts';
+
 export const Blog = () => {
     // retrieve all posts fetch getAll
 
