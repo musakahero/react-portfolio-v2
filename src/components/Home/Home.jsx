@@ -14,10 +14,8 @@ export const Home = () => {
                 <h1>Hi, I'm Teo - a web developer.<br />Welcome to my domain.</h1>
                 <h3>See what I'm up to <strong className={styles["blogLink"]}><Link to={'/blog'}>here</Link></strong>.</h3>
             </motion.div>
-            <div className={styles["image-container"]}>
-                {/* <img src={profilePhoto} alt="" /> */}
-
-            </div>
+            {/* <div className={styles["image-container"]}>
+            </div> */}
         </section>
     );
 }

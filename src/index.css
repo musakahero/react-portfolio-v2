@@ -3,7 +3,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  
 }
 
 /* remove default spacing */

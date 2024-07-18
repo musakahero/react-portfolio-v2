@@ -1,23 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 .app {
-  background-image: url("./pexels-scottwebb-305821.jpg");
-  background-size:cover;
-  /* aspect-ratio: 1/1; */
+  /* background */
+  background-image: url("./pexels-stywo-1054218.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: 60% 20%;
+  /* sizing */
   min-height: 100vh;
+  /* padding: 1rem 2rem 1rem 2rem; */
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  /* text */
   color: var(--font-dark);
   font-family: "Encode Sans Expanded", sans-serif;
   font-weight: 400;
   font-style: normal;
 
-  padding: 1rem 2rem 1rem 2rem;
-
   /* Colors */
-  --accent-main: #8CAF6F;
+  /* --accent-main: #8CAF6F; */
+  --accent-main: whitesmoke;
+  --accent-main-transparent: #f5f5f58c;
   --font-light: whitesmoke;
   --font-dark: black;
   --bg-dark: black;
@@ -32,5 +36,20 @@
   --bg-dark: whitesmoke;
   --bg-light: black;
   --bg-dark-transparent: rgba(238, 238, 238, 0.708);
-  background-image: url("./cosmos-1853491.jpg");
+  background-image: url("./pexels-instawally-176851.webp");
+  background-position: default;
+  background-size: default;
+
+
 }
+
+/* Responsive */
+@media screen and (max-width: 425px) {
+  .app {
+    /* padding: 0.7rem; */
+  }
+  main {
+    /* padding-left: 1rem; */
+  }
+}
+

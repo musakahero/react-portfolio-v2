@@ -55,7 +55,7 @@ export const appearInstant = {
 export const appearFromLeft = {
     hidden: {
         opacity: 0,
-        x:"-100vh" 
+        x: "-100vh"
     },
     visible: {
         opacity: 1,
@@ -68,13 +68,43 @@ export const appearFromLeft = {
 export const appearFromRight = {
     hidden: {
         opacity: 0,
-        x:"100vh"
+        x: "100vh"
     },
     visible: {
         opacity: 1,
-        x:"0vh",
+        x: "0vh",
         transition: {
             duration: 0.8
+        }
+    }
+}
+
+export const navMenuAppearFromRight = {
+    hidden: {
+        x: "80%",
+        transition: {
+            type: "tween"
+        }
+    },
+    visible: {
+        x: "0%",
+        transition: {
+            type: "tween"
+        }
+    }
+}
+
+export const rotateElement180 = {
+    hidden: {
+        rotateY: 0,
+        transition: {
+            duration: 0.4
+        }
+    },
+    visible: {
+        rotateY: 180,
+        transition: {
+            duration: 0.4
         }
     }
 }

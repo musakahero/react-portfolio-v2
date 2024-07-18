@@ -18,10 +18,11 @@ export const SectionElement = ({
             variants={order % 2 > 0 ? appearFromLeft : appearFromRight}
             animate={'visible'}
         >
-            <Link to={projectUrl}>
+            <Link to={projectUrl} className={styles['thumbnail']}>
                 <img
                     src={imgUrl ? imgUrl : missingImg}
-                    alt={`Screenshot of ${title}`} />
+                    alt={`Screenshot of ${title}`}
+                     />
             </Link>
             <div className={styles['section-text']}>
                 <h1>{title}</h1>
