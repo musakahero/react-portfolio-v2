@@ -81,7 +81,7 @@ export const appearFromRight = {
 
 export const navMenuAppearFromRight = {
     hidden: {
-        x: "80%",
+        x: "83%",
         transition: {
             type: "tween"
         }
