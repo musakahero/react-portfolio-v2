@@ -6,12 +6,11 @@
     grid-template-columns: 1fr 1.2fr;
     /* grid-template-columns: auto; */
     column-gap:clamp(1rem, 2.5vw,3rem);
-    width: 60%;
+    width: 70%;
     height: 40%;
     margin: auto;
     backdrop-filter: blur(24px);
     padding: 0.5rem;
-    
 }
 
 .section-container:hover {
@@ -52,6 +51,11 @@
 
 @media screen and (max-width: 768px) {
     .section-container {
-        width: 70%;
+        /* width: 70%; */
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    row-gap:clamp(1rem, 2.5vw,3rem);
+
+    /* height: auto; */
     }
 }
